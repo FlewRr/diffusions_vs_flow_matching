@@ -4,16 +4,6 @@ This project explores and compares two generative modeling approaches: Diffusion
 
 While diffusion models have recently set state-of-the-art results on various image generation benchmarks, but they are notoriously slow at inference. Flow matching which is newer techique promises faster sampling with competitive quality. This project investigates how these methods compare both qualitatively and quantitatively.
 
-
-
-flow matching - 97 secs on the batch of 128 imaegs
-ddim:
-- 36 secs on the batch of 128 images -- 50 timesteps
-- 78 secs on the batch of 128 images -- 100 timesteps
-- 113 secs on the batch of 128 images -- 150 timestesp
-
-
-
 # Simple Diffusion vs Simple FM on simple star point cloud dataset
 
 Below is the visualization of the sampling process of DDPM and Flow Matching (left and right gif accordingly). Both start from noise and gradually transform the points until they form the star — but they do it in very different ways.
@@ -43,9 +33,8 @@ The models were evaluated in terms of:
 * Training dynamics (loss behaviour, stability)
 
 Despite using the same backbone, the two approaches differ fundamentally in how they model the data distribution:    
-* DDPM learns to denoise images over hundreds of discrete timesteps. While it produces high-quality results, it requires many forward passes for a single image. In this work, we use the DDIM approach for sampling, which preserves the training framework of DDPM but introduces a deterministic and significantly faster sampling procedure.     
+* DDPM learns to denoise images over hundreds of discrete timesteps. While it produces high-quality results, it requires many forward passes for a single image. In this work, DDIM approach is used for sampling, which preserves the training framework of DDPM but introduces a deterministic and significantly faster sampling procedure.     
 * Flow Matching learns a continuous transport field, enabling much faster sampling in a single ODE/SDE solve. It captures global structure early and converges faster during training.
-
 
 
 ## Sampling quality comparison:
