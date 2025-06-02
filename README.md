@@ -53,4 +53,4 @@ Some flow matching samples exhibit color bleeding and pixel-level noise which ma
 
 DDPM samples do not have any artifacts or noises, but it did not fully trained to generate flower petals properly: they have unnaturaly sharp edges, which can also be explained by limited GPU resources.
 
-Overall, models' quality is decent and resemble the distribution from the Oxford Flowers dataset. 
+Overall, models' quality is decent and outputs reasonably resemble the distribution found in the Oxford Flowers dataset. 
