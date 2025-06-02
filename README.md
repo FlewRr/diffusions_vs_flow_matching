@@ -15,8 +15,8 @@ As can be seen in visualization DDPM-predicted points move chaotically throughou
     <td align="center"><strong>Flow Matching</strong></td>
   </tr>
   <tr>
-    <td><img src="gifs/ddpm_evolution.gif" width="450"/></td>
-    <td><img src="gifs/flow_matching_evolution.gif" width="450"/></td>
+    <td><img src="media/gifs/ddpm_evolution.gif" width="450"/></td>
+    <td><img src="media/gifs/flow_matching_evolution.gif" width="450"/></td>
   </tr>
 </table>
 
@@ -44,8 +44,8 @@ Despite using the same backbone, the two approaches differ fundamentally in how 
     <td align="center"><strong>Flow Matching Output</strong></td>
   </tr>
   <tr>
-    <td><img src="samples/ddpm_image_grid.png" width="300"/></td>
-    <td><img src="samples/flow_matching_image_grid.png" width="300"/></td>
+    <td><img src="media/samples/ddpm_image_grid.png" width="300"/></td>
+    <td><img src="media/samples/flow_matching_image_grid.png" width="300"/></td>
   </tr>
 </table>
 
