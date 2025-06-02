@@ -54,3 +54,20 @@ Some flow matching samples exhibit color bleeding and pixel-level noise which ma
 DDPM samples do not have any artifacts or noises, but it did not fully trained to generate flower petals properly: they have unnaturaly sharp edges, which can also be explained by limited GPU resources.
 
 Overall, models' quality is decent and outputs reasonably resemble the distribution found in the Oxford Flowers dataset. 
+
+## Training loss volatility
+Both models were trained around 300 epochs, using basic hyperparameters.
+
+<table>
+  <tr>
+    <td align="center"><strong>DDPM</strong></td>
+    <td align="center"><strong>Flow Matching</strong></td>
+  </tr>
+  <tr>
+    <td><img src="media/ddpm_loss.png" width="450"/></td>
+    <td><img src="media/flow_matching_loss.png" width="450"/></td>
+  </tr>
+</table>
+
+Loss during DDPM training was fluctuating near low values which can be explained by absence of hyperparameters tuning and low number of training epochs due to limited GRU resources.
+Flow matching training loss shows evident trend of decreasing reaching it minimum by the end of the training.
