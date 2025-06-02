@@ -74,27 +74,27 @@ Flow matching training loss shows evident trend of decreasing reaching it minimu
 
 # Possible Improvements
 ## Diffusion
-* Classifier-free guidance (CFG)
-  Training with randomly dropped condition labels and allows guidance during sampling.    
+* Classifier-free guidance (CFG)               
+  Training with randomly dropped condition labels and allows guidance during sampling.                       
   "Classifier-Free Diffusion Guidance" ([Ho & Salimans, 2022](https://arxiv.org/abs/2207.12598))
   
-* Loss weighting
-  Scaling the loss dynamically to better balance early/late noise levels.     
+* Loss weighting            
+  Scaling the loss dynamically to better balance early/late noise levels.                            
   "Elucidating the Design Space of Diffusion-Based Generative Models" ([Hoogeboom et al., 2022](https://arxiv.org/abs/2206.00364))
   
-* Consistency Models / distillation
+* Consistency Models / distillation                         
   Training a model to directly match the result of multiple DDIM steps in one pass (1-step sampling).     
   "Consistency Models" ([Song et al., 2023](https://arxiv.org/abs/2303.01469))
   
-* Latent diffusion
-  Perform DDIM in a latent space using a VAE encoder-decoder. Speeds up training and generation.   
+* Latent diffusion           
+  Perform DDIM in a latent space using a VAE encoder-decoder. Speeds up training and generation.    
   "High-Resolution Image Synthesis with Latent Diffusion Models" ([Rombach et al., 2022](https://arxiv.org/abs/2112.10752))
 
 ## Flow Matching
-* Classifier-free / classifier guidance for Flow Matching
-  Similar to DDIM: training with label dropout (CFG) or guide the sampling with a trained classifier.
+* Classifier-free / classifier guidance for Flow Matching                 
+  Similar to DDIM: training with label dropout (CFG) or guide the sampling with a trained classifier.                     
   "Classifier-Free Guided Diffusion Models for Inverse Problems" ([Chung et al., 2023](https://arxiv.org/abs/2301.10972))
 
-* Stochastic Flow Matching
-  Training model to match vector fields along stochastic paths.
+* Stochastic Flow Matching                    
+  Training model to match vector fields along stochastic paths.                          
   ""Stochastic Flow Matching for Protein Backbone Generation"" ([Bose et al., 2024](https://arxiv.org/abs/2310.02391))
