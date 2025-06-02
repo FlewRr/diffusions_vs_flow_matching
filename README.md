@@ -59,3 +59,9 @@ Despite using the same backbone, the two approaches differ fundamentally in how 
     <td><img src="samples/flow_matching_image_grid.png" width="300"/></td>
   </tr>
 </table>
+
+Some flow matching samples exhibit color bleeding and pixel-level noise which may be caused by some instabilities in training or insufficient model capacity since the entire training process took place under limited GPU resources conditions.
+
+DDPM samples do not have any artifacts or noises, but it did not fully trained to generate flower petals properly: they have unnaturaly sharp edges, which can also be explained by limited GPU resources.
+
+Overall, models' quality is decent and resemble the distribution from the Oxford Flowers dataset. 
