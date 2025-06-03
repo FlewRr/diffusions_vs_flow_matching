@@ -27,7 +27,6 @@ Two different models were trained on Oxford Flowers 102, both uses UNet model as
 
 The models were evaluated in terms of:
 * Sample quality (visual fidelity of generated flowers)
-* Sampling speed (inference efficiency)
 * Training dynamics (loss behaviour, stability)
 
 Despite using the same backbone, the two approaches differ fundamentally in how they model the data distribution:    
