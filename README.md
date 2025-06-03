@@ -77,25 +77,25 @@ Flow matching training loss shows an evident trend of decreasing reaching its mi
 * Loss weighting
   Scaling the loss dynamically to better balance early/late noise levels
 
-* Classifier-free guidance
+* Classifier-free guidance                                    
   Training with randomly dropped condition labels.
 
-* Latent diffusion
+* Latent diffusion                                       
   DDIM performance in a latent space using VAE encoder-decoder
-   
-* Consistency Models / distillation (hard)                                            
+        
+* Consistency Models / distillation (hard)                                                            
   Training a model to directly match the result of multiple DDIM steps in one pass (1-step sampling).     
   "Consistency Models" ([Song et al., 2023](https://arxiv.org/abs/2303.01469))
   
 
 ## Flow Matching
-* Experiments with ODE solvers                                
+* Experiments with ODE solvers                                       
   Using different ODE solvers in sampling.
    
-* Classifier-free / classifier guidance for Flow Matching                             
+* Classifier-free / classifier guidance for Flow Matching                                                    
   Similar to DDIM: training with label dropout (CFG) or guide the sampling with a trained classifier.                     
 
-* Stochastic Flow Matching                          
+* Stochastic Flow Matching                                                    
   Training model to match vector fields along stochastic paths.
 
 
