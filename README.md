@@ -66,8 +66,9 @@ Both models were trained around 300 epochs, using basic hyperparameters.
   </tr>
 </table>
 
-Loss during DDPM training was fluctuating near low values which can be explained by absence of hyperparameters tuning and low number of training epochs due to limited GRU resources.                      
-Flow matching training loss shows evident trend of decreasing reaching it minimum by the end of the training.
+Loss during DDPM training was fluctuating near low values, most likely, this is due to the absence of hyperparameter tuning and low number of training epochs.
+
+Flow matching training loss shows an evident trend of decreasing reaching its minimum by the end of the training. This may indicate that Flow matching training is more stable and balanced throughout all epochs.
 
 
 
